@@ -38,6 +38,7 @@ export function enableDebug(){
 
 export function updateDebugData(){
     if (global.settings.expose){
+        console.log("123456")
         window.evolve.global = global;
         window.evolve.craftCost = deepClone(craftCost()),
         window.evolve.breakdown = deepClone(breakdown);
